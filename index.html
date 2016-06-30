@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Energy Star 2016, KY </title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="map"></div>
+<div id="query" class="leaflet-bar">
+<label>
+  Application Status
+  <select id="appStatus">
+    <!-- make sure to encase string values in single quotes for valid sql -->
+    <option value='1=1'>All</option>
+    <option value="status=C">Constructed</option>
+    <option value="status=G">Granted</option>
+    <option value="status=A">Cancelled</option>
+    <option value="status=T">Terminated</option>
+    <option value="status=I">Dismantled</option>
+  </select>
+</label>
+</div>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet-src.js"></script>
+<script src="https://cdn.jsdelivr.net/leaflet.esri/2.0.0/esri-leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
