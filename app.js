@@ -52,14 +52,14 @@ var map = L.map('map', {
   }
 
   L.esri.tiledMapLayer({
-    url: 'http://gis.gscplanning.com/arcgis/rest/services/basemaps/gscbase_streets/MapServer', 
+    url: 'https://gis.gscplanning.com/arcgis/rest/services/basemaps/gscbase_streets/MapServer', 
     attribution: 'GSCPC',
     // Dealing with broken blank tiles: https://github.com/Esri/esri-leaflet/issues/759
     errorTileUrl: './errorTile256.png' 
   }).addTo(map);
   
   var cellTowers = L.esri.featureLayer({
-    url: 'http://services1.arcgis.com/dpmGqj7FxlwlvK0y/arcgis/rest/services/Scott_County_Cell_Towers/FeatureServer/0',
+    url: 'https://services1.arcgis.com/dpmGqj7FxlwlvK0y/arcgis/rest/services/Scott_County_Cell_Towers/FeatureServer/0',
     pointToLayer: function (geojson, latlng) {
       return L.circleMarker(latlng,{
         fillColor: style(geojson),
