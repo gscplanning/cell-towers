@@ -15,6 +15,7 @@ var map = L.map('map', {
         '<h3>' + props.location + '</h3><br>' +
         '<b>Status: </b> ' + props.status2 + '<br>' +
         '<b>Owner: </b> ' + props.owner + '<br>' +
+        '<b>Height: </b>' + props.height_agl + '&#39;<br>' +
         '<b><a href="http://wireless2.fcc.gov/UlsApp/AsrSearch/asrRegistration.jsp?callingSystem=AS&amp;regKey=' + props.page + '" target="_blank">View Application</a></b><br>'
         : 'Click icon for more info'
         )
