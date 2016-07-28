@@ -1,28 +1,34 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset=utf-8 />
+  <meta charset="utf-8" />
   <title>Scott County Cell Tower Applications</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div id="map"></div>
-<div id="query" class="leaflet-bar">
-<label>
-  Application Status
-  <select id="app-status">
-    <!-- make sure to encase string values in single quotes for valid sql -->
-    <option value='1=1'>All</option>
-    <option value="status='C'">Constructed</option>
-    <option value="status='G'">Granted</option>
-    <option value="status='A'">Cancelled</option>
-    <option value="status='T'">Terminated</option>
-    <option value="status='I'">Dismantled</option>
-  </select>
-</label>
+<div id="title-box">
+  <h1 id="title">Antenna Structure Registrations, Scott County, KY</h1>
+  <p id="explainer">An historical look at all Antenna Structure Registrations filed with the FCC (updated: 7/2016)</p>
+  <div id="query">
+  <label>
+    <b>Application Status</b>
+    <select id="app-status">
+      <!-- make sure to encase string values in single quotes for valid sql -->
+      <option value="1=1">All</option>
+      <option value="status='C'">Constructed</option>
+      <option value="status='G'">Granted</option>
+      <option value="status='A'">Cancelled</option>
+      <option value="status='T'">Terminated</option>
+      <option value="status='I'">Dismantled</option>
+    </select>
+  </label>
 </div>
+</div>
+
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/leaflet/1.0.0-rc.1/leaflet-src.js"></script>
 <script src="https://cdn.jsdelivr.net/leaflet.esri/2.0.0/esri-leaflet.js"></script>
