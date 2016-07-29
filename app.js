@@ -18,7 +18,7 @@ info.update = function(props) {
         '<b>Owner: </b> ' + props.owner + '<br>' +
         '<b>Height: </b>' + props.height_agl + '&#39;<br>' +
         '<b><a href="http://wireless2.fcc.gov/UlsApp/AsrSearch/asrRegistration.jsp?callingSystem=AS&amp;regKey=' + props.page + '" target="_blank">View Application</a></b></div>' :
-        'Click icon for more info'
+        '<div id="info-prompt">Click icon for more info</div>'
     );
 };
 info.addTo(map);

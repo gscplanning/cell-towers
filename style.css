@@ -102,7 +102,7 @@ img[src='Error.src'] {
     .info h3 {
         font-size: 1em;
     }
-    .info #info-content {
+    .info #info-content, .info #info-prompt {
         font-size: 1em;
     }
 }
@@ -122,7 +122,7 @@ img[src='Error.src'] {
     .info {
         max-width: 250px;
     }
-    .info #info-content {
+    .info #info-content, .info #info-prompt {
         font-size: 0.9em;
     }
 }
@@ -142,7 +142,7 @@ img[src='Error.src'] {
     .info {
         max-width: 150px;
     }
-    .info #info-content {
+    .info #info-content, .info #info-prompt {
         font-size: 0.8em;
     }
 }
@@ -163,18 +163,27 @@ img[src='Error.src'] {
     .info {
         max-width: 150px;
     }
-    .info #info-content {
+    .info #info-content, .info #info-prompt {
         font-size: 0.7em;
     }
 }
 @media (max-width: 411px) {
+    #title-box {
+        max-width: 150px;
+    }
+    #title {
+        font-size: 0.9em;
+    }
+    #explainer, #query {
+        font-size: 0.6em;
+    }
     .info {
         max-width: 120px;
     }
     .info h3 {
         font-size: 0.8em;
     }
-    .info #info-content {
+    .info #info-content, .info #info-prompt {
         font-size: 0.6em;
     }
 }
